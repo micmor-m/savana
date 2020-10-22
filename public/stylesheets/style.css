@@ -1,8 +1,51 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Actor&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-a {
-  color: #00B7FF;
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #fdbc5b;
+  font: Actor, sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  min-height: 100vh;
+}
+
+.full-height-grow {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.25em;
+  color: inherit;
+  text-decoration: none;
+}
+
+.brand-logo-name {
+  margin-bottom: 1rem;
+}
+
+.main-nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav a {
+  color: inherit;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.main-nav a:hover {
+  color: #fb6d4e;
 }

@@ -1,0 +1,40 @@
+.title {
+  font-weight: 500;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.btn {
+  color: white;
+  background-color: #fb6d4e;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.home-main-section {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.home-main-section .img-wrapper {
+  flex-grow: 1;
+  flex-direction: column;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+
+.home-main-section .pan-image {
+  background-image: url(images/landing-page-pan.png);
+  flex-grow: 1;
+  max-height: 70vh;
+  min-width: 30vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
