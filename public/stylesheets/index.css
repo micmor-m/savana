@@ -1,8 +1,10 @@
 .title {
   font-weight: 500;
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-size: 10rem;
+  margin-bottom: -2.5rem;
   margin-top: 0;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .btn {
@@ -11,7 +13,14 @@
   padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 2em;
+  text-align: center;
+  margin: 5rem auto;
+}
+
+.btn:hover {
+  color: #fb6d4e;
+  background-color: white;
 }
 
 .home-main-section {
@@ -30,11 +39,76 @@
 }
 
 .home-main-section .pan-image {
-  background-image: url(images/landing-page-pan.png);
+  /* background-image: url(/images/landing-page-pan.png); */
+  background: linear-gradient(to top, rgba(80, 60, 18, 0.6) 10%, transparent),
+    url("/images/landing-page-pan.png") center/ cover no-repeat border-box;
+  flex-shrink: initial;
   flex-grow: 1;
-  max-height: 70vh;
+  width: 100vw;
+  height: 100vh;
+  /*
   min-width: 30vh;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: bottom left;
+  background-position: bottom left; */
+}
+
+.home-main-section .call-to-action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1rem;
+  align-self: center;
+}
+
+.brand-logo {
+  /* display: flex; */
+  /* align-items: center; */
+  font-size: 1.25em;
+  color: inherit;
+  text-decoration: none;
+  text-align-last: center;
+}
+
+.brand-logo .title:hover {
+  color: #fb6d4e;
+  /* background-color: white; */
+}
+
+.brand-logo img:hover {
+  color: #fb6d4e;
+  /* background-color: white; */
+}
+/* 
+.brand-logo-name {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+} */
+
+.main-nav {
+  margin: 4rem auto;
+}
+
+.main-nav ul {
+  /* display: flex; */
+  margin: auto;
+  padding: 0;
+  list-style: none;
+  font-size: 2.2rem;
+}
+
+.main-nav li {
+  display: inline;
+}
+
+.main-nav a {
+  color: inherit;
+  text-decoration: none;
+  margin: 2rem 2rem 0 2rem;
+  /* padding: 2rem 2rem 0 2rem; */
+}
+
+.main-nav a:hover {
+  color: #fb6d4e;
+  border-bottom: 0.4rem solid #fb6d4e;
 }
