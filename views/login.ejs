@@ -1,28 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title><%= title %></title>
-    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Course Assignment 7</title>
+    <!-- <link rel="stylesheet" href="main.css" /> -->
     <link rel="stylesheet" href="/stylesheets/login.css" />
   </head>
-
-  <body class="full-height-grow">
-    <header></header>
-    <nav class="main-nav">
-      <a href="/" class="brand-logo">
-        <h1 class="title">SaucePan</h1>
-        <img src="/images/logo.png" />
-      </a>
-      <ul>
-        <li><a href="login.html">LOGIN</a></li>
-        <li><a href="register.html">REGISTER</a></li>
-        <li><a href="menu.html">MENU</a></li>
-      </ul>
-    </nav>
-      <div class="img-wrapper">
+  <body>
+    <div class="el1 container">
+      <header class="main-header">
+        <div>
+          <a href="/" class="main-header__brand">
+            <h1>SaucePan</h1>
+            <img src="/images/logo.png" />
+          </a>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__items">
+            <li class="main-nav__item"><a href="about-us.html">ABOUT US</a></li>
+            <li class="main-nav__item"><a href="login.html">LOGIN</a></li>
+            <li class="main-nav__item"><a href="register.html">REGISTER</a></li>
+            <li class="main-nav__item"><a href="menu.html">MENU</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- <div class="el1">Header</div> -->
+      <div class="el2 side-left">
+        <img src="/images/login.png" alt="login-image" class="login__image" />
       </div>
-      <div class="login">
+      <div class="el3">
+        <form method="POST" action="/login">
+          <h1>Login</h1>
+          <p>Login to order items for pickup.</p>
+          <div>
+            <label> Email Address </label>
+            <input id="email" name="email" type="email" />
+          </div>
+          <div>
+            <label for="password"> Password </label>
+            <input id="password" name="password" type="password" />
+          </div>
+          <button type="submit">Login</button>
+          <p>Don't have an account?</p>
+          <a href="/register" target="_blank"> Register Here </a>
+        </form>
       </div>
-    </section>
+      <div class="el4">Footer</div>
+    </div>
   </body>
 </html>
