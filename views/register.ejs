@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Login</title>
+    <title>Register</title>
     <!-- <link rel="stylesheet" href="main.css" /> -->
-    <link rel="stylesheet" href="/stylesheets/login.css" />
+    <link rel="stylesheet" href="/stylesheets/register.css" />
   </head>
   <body>
     <div class="el1 container">
@@ -28,26 +28,34 @@
       </header>
       <!-- <div class="el1">Header</div> -->
       <div class="el2 side-left">
-        <img src="/images/login.png" alt="login-image" class="login__image" />
+        <img
+          src="/images/register.png"
+          alt="register-image"
+          class="register__image"
+        />
       </div>
       <div class="el3">
-        <form method="POST" action="/login">
-          <h1>Login</h1>
-          <p>Login to place your order.</p>
+        <form method="POST" action="/register">
+          <h1>Sign Up</h1>
+          <p>Create an account to place your order.</p>
           <div>
-            <label> Email Address </label>
+            <label> Name </label>
+            <input id="name" name="name" type="text" />
+          </div>
+          <div>
+            <label for="email"> Email Address </label>
             <input id="email" name="email" type="email" />
           </div>
           <div>
             <label for="password"> Password </label>
             <input id="password" name="password" type="password" />
           </div>
-          <button type="submit">Login</button>
-          <p>Don't have an account?</p>
-          <a href="/register" target="_blank"> Register Here </a>
+          <button type="submit">Sign Up</button>
+          <p>Already have an account?</p>
+          <a href="/login">Login Here </a>
         </form>
       </div>
-      <div class="el4">Footer</div>
+      <div>Footer</div>
     </div>
   </body>
 </html>
