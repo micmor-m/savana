@@ -76,6 +76,24 @@
   text-decoration: none;
   text-align-last: center;
 }
+.brand-logo img {
+  width: 93px;
+  height: 93px;
+  transition: transform 2s ease-in-out;
+  animation: bouncing 600ms 3s 1 ease-in;
+}
+
+@keyframes bouncing {
+  0% {
+    transform: translateY(-400%);
+  }
+  50% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
 
 .brand-logo .title:hover {
   color: #fb6d4e;
@@ -85,6 +103,7 @@
 .brand-logo img:hover {
   color: #fb6d4e;
   /* background-color: white; */
+  transform: rotate(360deg);
 }
 /* 
 .brand-logo-name {
